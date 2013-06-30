@@ -1,0 +1,10 @@
+name: Gravatar for Movable Type
+id: Gravatar
+author_link: http://www.makotokw.com/
+author_name: makoto_kw
+description: Gravatar for Movable Type
+version: 0.1
+plugin_link: http://projects.makotokw.com/trac/arcadia/wiki/MovableType/Gravatar
+tags:
+    function:
+        CommentGravatar: $Gravatar::Gravatar::Plugin::tag_comment_gravatar

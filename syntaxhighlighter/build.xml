@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<project default="package">
+	<property name="bin" value="bin"/>
+	<property name="version" value="0.1.1"/>
+	<tstamp>
+		<format property="today" pattern="yyMMdd"/>
+	</tstamp>
+	<target name="package" description="make package">
+		<mkdir dir="${bin}/${version}"/>
+		<delete>
+			<fileset dir="${bin}/${version}">
+				<include name="mt-SyntaxHighlighter_${version}.${today}.zip"/>
+			</fileset>
+		</delete>
+		<zip destfile="${bin}/${version}/mt-SyntaxHighlighter_${version}.${today}.zip">
+			<fileset dir="." includes="*.txt"/>
+			<fileset dir="." includes="plugins/**"/>
+			<fileset dir="." includes="mt-static/**"/>
+		</zip>
+	</target>
+</project>

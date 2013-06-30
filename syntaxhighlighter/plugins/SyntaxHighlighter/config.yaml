@@ -1,0 +1,25 @@
+name: SyntaxHighlighter for Movable Type
+id: SyntaxHighlighter
+author_link: http://www.makotokw.com/
+author_name: makoto_kw
+description: SyntaxHighlighter for Movable Type is a fully functional self-contained code syntax highlighter by using the SyntaxHighlighter. (http://alexgorbatchev.com/wiki/SyntaxHighlighter)"
+version: 0.1.1
+plugin_link: http://projects.makotokw.com/trac/arcadia/wiki/MovableType/SyntaxHighlighter
+settings:
+    syntaxhighlighter_15compatible:
+        default: "0"
+        scope: blog
+blog_config_template: blog_config.tmpl
+tags:
+    function:
+        SyntaxHighlighterInclude: $SyntaxHighlighter::SyntaxHighlighter::Plugin::tag_sh_include
+
+text_filters:
+    shtransform:
+        label: SyntaxHighlighter
+        handler: $SyntaxHighlighter::SyntaxHighlighter::Plugin::filter_sh_transform
+        condition: $SyntaxHighlighter::SyntaxHighlighter::Plugin::filter_sh_transform_when
+    shtransformlinebreaks:
+        label: SyntaxHighlighter + Convert Line Breaks
+        handler: $SyntaxHighlighter::SyntaxHighlighter::Plugin::filter_sh_transform_line_breaks
+        condition: $SyntaxHighlighter::SyntaxHighlighter::Plugin::filter_sh_transform_when

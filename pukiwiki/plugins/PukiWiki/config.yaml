@@ -1,0 +1,16 @@
+name: PukiWiki for Movable Type
+id: PukiWiki
+author_link: http://www.makotokw.com/
+author_name: makoto_kw
+description: PukiWiki text to HTML formating. <br/><a href="plugins/PukiWiki/svc/pukiwiki/">go to PukiWIki on Movable Type</a>
+version: 0.1
+plugin_link: http://projects.makotokw.com/trac/arcadia/wiki/MovableType/PukiWiki
+text_filters:
+    pukiwiki_transform:
+        label: PukiWiki
+        handler: $PukiWiki::PukiWiki::Plugin::filter_pukiwiki_transform
+        condition: $PukiWiki::PukiWiki::Plugin::filter_pukiwiki_transform_when
+tags:
+    modifier:
+        pukiwiki_convert_html: $PukiWiki::PukiWiki::Plugin::convert_html
+blog_config_template: blog_config.tmpl

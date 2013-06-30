@@ -1,0 +1,13 @@
+<!--
+<mtapp:setting id="syntaxhighlighter_version" label="Version" required="1"
+  hint="Select a version of SyntaxHighlighter. You must donate and download it when you select 2.0." show_hint="1">
+<select name="syntaxhighlighter_version">
+  <option<mt:If name="syntaxhighlighter_version" eq="1.5"> selected</mt:If>>1.5</option>
+  <option<mt:If name="syntaxhighlighter_version" eq="2.0"> selected</mt:If>>2.0</option>
+</select>
+</mtapp:setting>
+-->
+<mtapp:setting id="syntaxhighlighter_15compatible" label="compatible with 1.5">
+<input type="checkbox" name="syntaxhighlighter_15compatible" id="syntaxhighlighter_15compatible" 
+  value="1"<mt:If name="syntaxhighlighter_15compatible" eq="1"> checked</mt:If>/>
+</mtapp:setting>

@@ -1,0 +1,15 @@
+<mtapp:widget class="news-widget" tabbed="1" label="Hatena Hot Keyword" can_close="1">
+    <mt:setvarblock name="widget_header"><ul class="tabs">
+      <li class="tab selected-tab">
+        <a href="http://d.hatena.ne.jp/keyword/"><span>はてな注目キーワード</span></a>
+      </li>
+    </ul></mt:setvarblock>
+    <mt:if name="keywords">
+      <mt:loop name="keywords">
+        <a href="<mt:var name="link">"><mt:var name="title"></a>&nbsp;&nbsp;
+      </mt:loop>
+      <mt:if name="date"><span style="color:orange">(<mt:var name="date">)</span></mt:if>
+    <mt:else>
+      <mt:if name="error"><mt:var name="error"></mt:if>
+    </mt:if>
+</mtapp:widget>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<project default="package">
+	<property name="bin" value="bin"/>
+	<property name="version" value="0.10"/>
+	<target name="package" description="make package">
+		<mkdir dir="${bin}"/>
+		<delete>
+			<fileset dir="${bin}">
+			    <include name="*"/>
+			</fileset>
+		</delete>
+		<zip destfile="${bin}/mt-MTmylo_${version}.zip">
+			<fileset dir="." includes="mt-static/**"/>
+			<fileset dir="." includes="plugins/**"/>
+		</zip>
+	</target>
+</project>

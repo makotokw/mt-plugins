@@ -1,0 +1,21 @@
+name: MTSmileVideo
+id: MTSmileVideo
+author_link: http://www.makotokw.com/
+author_name: makoto_kw
+description: Template tag to inject some HTML template required to show SimileVideo
+version: 0.2.2
+plugin_link: http://projects.makotokw.com/trac/arcadia/wiki/MovableType/MTSmileVideo
+tags:
+    function:
+        SmileVideo: $MTSmileVideo::MTSmileVideo::Plugin::tag_smile_video
+        SmileVideoThumbnail: $MTSmileVideo::MTSmileVideo::Plugin::tag_smile_video_thumbnail
+        SmileVideoFrame: $MTSmileVideo::MTSmileVideo::Plugin::tag_smile_video_frame
+text_filters:
+    nicovideoform:
+        label: NicoVideo
+        handler: $MTSmileVideo::MTSmileVideo::Plugin::filter_nicovideo_transform
+        condition: $MTSmileVideo::MTSmileVideo::Plugin::filter_nicovideo_transform_when
+    nicovideoformlinebreaks:
+        label: NicoVideo + Convert Line Breaks
+        handler: $MTSmileVideo::MTSmileVideo::Plugin::filter_nicovideo_transform_line_breaks
+        condition: $MTSmileVideo::MTSmileVideo::Plugin::filter_nicovideo_transform_when

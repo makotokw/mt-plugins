@@ -1,0 +1,20 @@
+<TMPL_INCLUDE NAME="header.tmpl">
+
+<div id="header">
+    <h1>Error</h1>
+</div>
+<div id="content">
+    <div class="preview">
+        <p>Sorry for the inconvenience.</p>
+        <!-- <TMPL_VAR NAME=ERROR ESCAPE=HTML> -->
+    </div>
+    <div class="button-bar">
+        <a href="<TMPL_VAR NAME=SCRIPT_URL>" class="button">Home</a>
+    </div>
+</div>
+<div id="footer">
+    <a href="http://www.movabletype.com/">Movable Type</a> &#169; 2003&#8211;2007 Six Apart, Ltd.<br />All Rights Reserved.
+    <div class="logout"><a href="<TMPL_VAR NAME=SCRIPT_URL>?__mode=logout" onclick="return confirmLogout( 'Are you sure you want to sign out?' )"><img src="<TMPL_VAR NAME=STATIC_URI>images/mylo/buttons/global/logout.png" alt="Sign out" width="20" height="20" /></a></div>
+</div>
+
+<TMPL_INCLUDE NAME="footer.tmpl">

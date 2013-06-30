@@ -1,0 +1,767 @@
+/* mylo Styles ============================================================= */
+
+/* Reset ------------------------------------------------------------------ */
+
+body {
+    background-color: #000;
+}
+
+html, body, div, p, hr,
+h1, h2, h3, h4, h5, h6,
+ul, ol, li, dl, dt, dd,
+blockquote, pre, th, td,
+form, fieldset, input,
+select, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+ol, ul { list-style: none; }
+
+a img { border: 0; }
+
+
+/* General ---------------------------------------------------------------- */
+
+body, input, select, textarea {
+    font: 14px Helvetica, sans-serif;
+}
+
+
+/* Header ----------------------------------------------------------------- */
+
+#header {
+    position: relative;
+    border-bottom: 1px solid #25688c;
+    padding: 5px 40px 4px;
+    background: #589bbf url(../images/mylo/backgrounds/header.png) repeat-x left center;
+}
+
+#header h1 {
+    overflow: hidden;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: #25688c 0px -1px 1px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#header .home,
+#header .site {
+    position: absolute;
+    overflow: hidden;
+    top: 7px;
+    width: 30px;
+    height: 26px;
+}
+
+#header .home { left: 5px; }
+#header .site { right: 5px; }
+
+#header .home a,
+#header .site a,
+#header .home img,
+#header .site img {
+    display: block;
+}
+
+
+/* Content ---------------------------------------------------------------- */
+
+#content {
+    /*min-height: 286px;*/
+    background-color: #fff;
+}
+
+.page-login #content,
+.page-main #content {
+    background: #141414 url(../images/mylo/backgrounds/content.png) repeat-x left top;
+}
+
+
+/* Footer ----------------------------------------------------------------- */
+
+#footer {
+    position: relative;
+    border-top: 1px solid #222;
+    padding: 8px 20px 9px;
+    background: #000 url(../images/mylo/backgrounds/footer.png) repeat-x left center;
+}
+
+#footer .copyright {
+    color: #ccc;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    text-shadow: #000 0px 1px 1px;
+}
+
+#footer .copyright a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+#footer .logout {
+    position: absolute;
+    overflow: hidden;
+    bottom: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+#footer .logout a,
+#footer .logout img {
+    display: block;
+}
+
+/* Login ------------------------------------------------------------------ */
+
+.page-login .login-fields {
+    padding: 30px 30px 0;
+}
+
+.page-login label,
+.page-login .error {
+    color: #fff;
+}
+
+.page-login label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.page-login #username,
+.page-login #password {
+    width: 100%;
+    border-width: 0;
+    padding: 0;
+    -khtml-appearance: none;
+}
+
+.page-login .field {
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    padding: 5px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+}
+
+.page-login .login-fields .button-bar {
+    padding: 10px 50px 1px;
+}
+
+
+/* Editor ----------------------------------------------------------------- */
+
+.editor .meta-field,
+.editor .content-field {
+    border-bottom: 1px solid #d9d9d9;
+    clear: both;
+}
+
+.editor .meta-field .field-name {
+    float: left;
+    color: #666;
+}
+
+.editor .content-field .field-name {
+		float: left;
+    color: #666;
+}
+
+.editor .meta-field .field-name     { width: 90px; }
+.editor .content-field .field-name  { width: 60px; }
+.editor .title-field .field-name    { width: 75px; }
+.editor .tags-field .field-name     { width: 60px; }
+.editor .category-field .field-name { width: 75px; }
+
+.editor .meta-field .field-value     { margin-left: 90px; }
+.editor .content-field .field-value  { margin-left: 60px; }
+.editor .title-field .field-value    { margin-left: 75px; }
+.editor .tags-field .field-value     { margin-left: 60px; }
+.editor .category-field .field-value { margin-left: 75px; }
+
+form#upload-form input { float:left; }
+
+.editor .meta-field .field-name-inner {
+    padding: 10px 0 0 10px;
+}
+.editor .content-field .field-name-inner {
+    padding: 10px 0 0 10px;
+}
+.editor .content-field .field-value-inner textarea { border: 1px solid #777; }
+
+.editor .field-value-inner {
+    padding: 10px;
+}
+
+.editor .meta-field .field-value-inner {
+    padding-left: 0;
+}
+
+.editor .field-value-content {
+    overflow: hidden;
+}
+
+.editor #title,
+.editor #tags,
+.editor #category_id,
+.editor #text,
+.editor #text_more,
+.editor #excerpt,
+.editor #status,
+.editor #convert_breaks,
+.editor #allow_comments,
+.editor #allow_pings {
+    width: 100%;
+    border-width: 0;
+    padding: 0;
+    -khtml-appearance: none;
+}
+
+.editor #text,
+.editor #text_more {
+    display: block;
+}
+
+
+/* Lists ------------------------------------------------------------------ */
+
+.list-header {
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 5px 10px;
+    background-color: #333;
+}
+
+.list-item {
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+    color: #666;
+    background-color: #fff;
+}
+
+.list-item:first-child {
+    border-top-width: 0;
+}
+
+.list-item a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.li-inset {
+    display: block;
+    padding: 10px;
+}
+
+.li-status {
+    display: block;
+}
+
+a .li-status {
+    padding-right: 18px;
+    background: url(../images/mylo/arrow.png) no-repeat center right;
+}
+
+.item-published .li-status {
+    padding-left: 22px;
+    background: url(../images/mylo/status/published.png) no-repeat center left;
+}
+
+.item-published a .li-status {
+    background: url(../images/mylo/arrow.png) no-repeat center right,
+                url(../images/mylo/status/published.png) no-repeat center left;
+}
+
+.item-draft .li-status {
+    padding-left: 22px;
+    background: url(../images/mylo/status/draft.png) no-repeat center left;
+}
+
+.item-draft a .li-status {
+    background: url(../images/mylo/arrow.png) no-repeat center right,
+                url(../images/mylo/status/draft.png) no-repeat center left;
+}
+
+.item-future .li-status {
+    padding-left: 22px;
+    background: url(../images/mylo/status/future.png) no-repeat center left;
+}
+
+.item-future a .li-status {
+    background: url(../images/mylo/arrow.png) no-repeat center right,
+                url(../images/mylo/status/future.png) no-repeat center left;
+}
+
+.item-moderated .li-status {
+    padding-left: 22px;
+    background: url(../images/mylo/status/moderated.png) no-repeat center left;
+}
+
+.item-moderated a .li-status {
+    background: url(../images/mylo/arrow.png) no-repeat center right,
+                url(../images/mylo/status/moderated.png) no-repeat center left;
+}
+
+.li-label,
+.li-details {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.li-label {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: bold;
+}
+
+.li-details {
+    margin-top: 1px;
+    color: #666;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+
+/* Modal */
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    z-index: 1;
+}
+
+.modal-list {
+    min-height: 314px;
+    border: 1px solid #333;
+    padding: 5px;
+    background-color: #000;
+    -webkit-box-shadow: 0px 2px 10px #000;
+    -webkit-border-radius: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.modal .list-header {
+    border: 1px solid #333;
+    padding: 4px 9px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+}
+
+.modal .list-item {
+    border-color: #262626;
+    background-color: #111;
+}
+
+.modal .list-item a {
+    color: #fff;
+}
+
+.modal .li-details {
+    color: #999;
+}
+
+
+/* Menus ------------------------------------------------------------------ */
+
+.menu-wrapper {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.menu {
+    padding: 16px 1px 4px 15px;
+}
+
+.menu:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.menu a {
+    overflow: hidden;
+    display: block;
+    float: left;
+    margin: 0 14px 12px 0;
+    width: 62px;
+    height: 90px;
+    color: #999;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu img {
+    display: block;
+    width: 62px;
+    margin: 0 auto;
+}
+
+.menu .menu-item-label {
+    display: block;
+    margin-top: 2px;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+}
+
+.menu .mi-label-narrow {
+    padding: 0 5px;
+}
+
+
+/* Tabs ------------------------------------------------------------------- */
+
+.tabs {
+    color: #fff;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+    background-color: #023559;
+}
+
+.tabs ul {
+    width: 380px;
+    height: 25px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.tabs li {
+    display: block;
+    float: left;
+    width: 120px;
+    margin-left: 1px;
+    border: 1px solid #25688c;
+    background: #25688c;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+}
+
+.tabs li:first-child {
+    width: 122px;
+    margin-left: 0;
+}
+
+.tabs li.yah {
+    border-color: #fff;
+    background: #fff;
+}
+
+.tabs a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tabs li.yah a {
+    color: #000;
+}
+
+
+/* Buttons ---------------------------------------------------------------- */
+/*
+.button-bar {
+    padding: 10px 10px 1px;
+}
+
+.button-bar .button {
+    display: block;
+    margin-bottom: 9px;
+    border-width: 0 10px;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+    text-shadow: #fff 0px 1px 1px;
+}
+
+.button-bar a.button,
+.button-bar span.button {
+    text-align: center;
+}
+
+.button-bar a.button {
+    color: #000;
+    text-decoration: none;
+}
+
+.button-bar input.button {
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    -khtml-appearance: none;
+}
+
+.button-bar .delete-button.button {
+    color: #fff;
+    text-shadow: #600 0px -1px 1px;
+}
+
+.button-bar .cancel-button.button {
+    color: #fff;
+    text-shadow: #000 0px -1px 1px;
+}
+
+.button-bar .delete-button.button {
+    -webkit-border-image: url(../images/mylo/buttons/red.png) 0 10 0 10;
+}
+
+.button-bar .cancel-button.button {
+    -webkit-border-image: url(../images/mylo/buttons/black.png) 0 10 0 10;
+}
+
+.button-bar .disabled-button.button {
+    color: #666;
+}
+
+.button-bar .two-up {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.button-bar .two-up .button {
+    width: 125px;
+}
+
+.button-bar .two-up .left {
+    float: left;
+}
+
+.button-bar .two-up .right {
+    margin-left: 155px;
+}
+*/
+
+/* Messages --------------------------------------------------------------- */
+
+.message {
+    padding: 10px 10px 0;
+}
+
+.message-content {
+    padding: 9px 9px 4px 29px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+}
+
+.message-content p,
+.message-content li {
+    margin-bottom: 5px;
+}
+
+.message-content ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+.success-message .message-content {
+    padding-left: 9px;
+    border-color: #cf9;
+    background: #cf9;
+}
+
+.warning-message .message-content {
+    border-color: #fcc;
+    background: #fcc url(../images/mylo/status/error.png) no-repeat 5px 7px;
+}
+
+.error-message .message-content {
+    border-color: #fcc;
+    background: #fcc url(../images/mylo/status/error.png) no-repeat 5px 7px;
+}
+
+.zerostate-message .message-content {
+    padding-left: 9px;
+    border-color: #ccc;
+    background: #ccc;
+}
+
+.rebuild-message .message-content {
+    text-align: center;
+    padding: 30px 10px 5px;
+    border-width: 0;
+}
+
+.rebuild-message .message-content p,
+.rebuild-message .message-content ul {
+    margin-top: 10px;
+    color: #666;
+}
+
+.rebuild-message .message-content ul {
+    text-align: left;
+}
+
+
+/* Settings --------------------------------------------------------------- */
+
+.setting-group {
+    padding: 10px 10px 0;
+}
+
+.setting-header,
+.setting-note {
+    margin-bottom: 10px;
+    padding: 0 10px;
+    color: #4c566c;
+    text-shadow: #fff 0px 1px 1px;
+}
+
+.setting-header {
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: bold;
+}
+
+.setting-note {
+    text-align: center;
+}
+
+.setting-header-mini {
+    margin: 10px 0 7px;
+    padding: 0 10px;
+    color: #4c566c;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: #fff 0px 1px 1px;
+}
+
+.setting-highlight {
+    margin-bottom: 10px;
+    padding: 0 10px;
+    color: #4c566c;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.setting-highlight a {
+    color: #023559;
+}
+
+.settings {
+    margin-bottom: 5px;
+    border: 1px solid #b3b3b3;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+}
+
+.settings .setting {
+    border-top: 1px solid #b3b3b3;
+    padding: 9px;
+    font-size: 17px;
+    line-height: 23px;
+    clear: both;
+}
+
+.settings .setting:first-child {
+    border-top-width: 0;
+}
+
+.settings .setting-label {
+    width: 90px;
+    float: left;
+    font-weight: bold;
+}
+
+.settings .setting-field {
+    margin-left: 90px;
+    text-align: right;
+}
+
+.settings .text-setting .setting-field input,
+.settings .select-setting .setting-field select {
+    width: 180px;
+    border-color: #666;
+}
+
+.settings .text-setting .setting-field input {
+    padding: 2px;
+}
+
+.settings .text-setting .setting-label { width: 80px; }
+.settings .text-setting .setting-field { margin-left: 90px; }
+
+.settings .select-setting .setting-label { width: 80px; padding-top: 1px; }
+.settings .select-setting .setting-field { margin-left: 90px; }
+
+.settings .checkbox-setting .setting-label { width: 250px; }
+.settings .checkbox-setting .setting-field { margin-left: 260px; }
+
+
+/* Preview ---------------------------------------------------------------- */
+
+.preview {
+    padding: 10px 10px 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.preview h1, .preview h2, .preview h3,
+.preview h4, .preview h5, .preview h6,
+.preview p, .preview blockquote, .preview pre,
+.preview ul, .preview ol, .preview dl, .preview table {
+    margin-bottom: 10px;
+}
+
+.preview h1, .preview h2, .preview h3,
+.preview h4, .preview h5, .preview h6 {
+    font-weight: bold;
+}
+
+.preview blockquote {
+    margin-left: 15px;
+    border-left: 1px solid #ccc;
+    padding-left: 14px;
+}
+
+.preview pre, .preview code {
+    font-family: monospace;
+}
+
+.preview ul, .preview ol, .preview dd {
+    padding-left: 30px;
+}
+
+.preview ul { list-style-type: disc; }
+.preview ol { list-style-type: decimal; }
+
+/* Dialog -------------------------------------------------------------- */
+#dialog-container{ width:100%; }
+#dialog { width: 100%; }
+#dialog iframe { width: 100%; height:40px; }
+
+body.dialog { background-color: #fff; margin:0; padding:0; } 
+body.dialog #container { margin:0; padding:0;  }
+body.dialog #content { margin:0; padding:0; }
+
+/* Utilities -------------------------------------------------------------- */
+
+.hidden {
+    display: none;
+}

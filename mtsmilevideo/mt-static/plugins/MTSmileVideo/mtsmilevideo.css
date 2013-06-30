@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+div.smilevideo-item { font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif; }
+
+/* a */
+div.smilevideo-item a:link    { color:#222; text-decoration:underline;}
+div.smilevideo-item a:visited { color:#444; text-decoration:underline;}
+div.smilevideo-item a:hover,
+div.smilevideo-item a:active { color:#666; text-decoration:none;}
+
+/* a.video */
+div.smilevideo-item a.video { font-weight:bold;}
+div.smilevideo-item a.video:link    { color:#677; text-decoration:underline;}
+div.smilevideo-item a.video:visited { color:#233; text-decoration:underline;}
+div.smilevideo-item a.video:hover,
+div.smilevideo-item a.video:active { color:#FFF; text-decoration:none; background:#455;}
+
+/* font-size */
+div.smilevideo-item h1 { font-size:18px; line-height:22px;}
+div.smilevideo-item h2 { font-size:16px; line-height:20px;}
+div.smilevideo-item h3 { font-size:14px; line-height:18px;}
+div.smilevideo-item .TXT12  { font-size:12px; line-height:16px;}
+div.smilevideo-item .TXT10  { font-size:10px; line-height:14px;}
+
+div.smilevideo-item h1,
+div.smilevideo-item h2,
+div.smilevideo-item h3,
+div.smilevideo-item p,
+div.smilevideo-item div,
+div.smilevideo-item form { margin:0; padding:0;}
+div.smilevideo-item img { border:0;}
+div.smilevideo-item table { text-align:left; border-spacing:0px; }
+
+div.smilevideo-item { color:#333; background:#EEE url('./bg_common.gif') repeat-x; margin: 0 4px 4px 0; padding:4px;}
+div.smilevideo-item { width:312px; height:176px; overflow:hidden; border:solid 1px #CCC; }
+
+div.smilevideo-item p.chacom_tit { font-size:12px; line-height:1.25; font-weight:bold; border-bottom:solid 2px #FFF; margin-bottom:4px; padding-bottom:2px;}
+div.smilevideo-item  img.chacom_img       { width:96px; height:96px; border:solid 1px #FFF; float:right; margin:0 0 4px 4px;}
+div.smilevideo-item  img.channel_list_img { width:48px; height:36px; border:solid 2px #FFF;}
+div.smilevideo-item  img.mylist_img   { width:48px; height:36px; border:solid 2px #333;}
+div.smilevideo-item  div.user_img     { background:#FFF; border:solid 1px #333; float:right; margin:0 0 4px 4px; padding:3px;}
+div.smilevideo-item  div.user_img img { width:96px; height:96px;}
+div.smilevideo-item  img.video_img    { width:80px; height:60px; border:solid 2px #333;}
+
+div.smilevideo-item  div.video_res { font-size:12px; line-height:1.25; font-weight:bold; background:#FFF; border:solid 2px #999; padding:6px; margin-top:2px;}

@@ -1,0 +1,20 @@
+name: MTSocialBookmarks
+id: MTSocialBookmarks
+author_link: http://makotokw.com/
+author_name: makoto_kw
+description: Template tag to inject some HTML template required to show Social Bookmarks for Movable Type 4 or later.
+version: 0.1.4
+plugin_link: http://projects.makotokw.com/trac/arcadia/wiki/MovableType/MTSocialBookmarks
+
+tags:
+    function:
+        SBHatenaBookmark: $MTSocialBookmarks::MTSocialBookmarks::Plugin::tag_sb_hatena_bookmark
+        SBBuzzurl: $MTSocialBookmarks::MTSocialBookmarks::Plugin::tag_sb_buzzurl
+        SBLivedoorClip: $MTSocialBookmarks::MTSocialBookmarks::Plugin::tag_sb_livedoor_ciip
+        SBYahooBookmark: $MTSocialBookmarks::MTSocialBookmarks::Plugin::tag_sb_yahoo_bookmark
+        SBPOOKMARKAirlines: $MTSocialBookmarks::MTSocialBookmarks::Plugin::tag_sb_pookmark_airlines
+        SBSaaf: $MTSocialBookmarks::MTSocialBookmarks::Plugin::tag_sb_saaf
+        SBNftyClip: $MTSocialBookmarks::MTSocialBookmarks::Plugin::tag_sb_nfty_clip
+        SBDelicious: $MTSocialBookmarks::MTSocialBookmarks::Plugin::tag_sb_delicious
+        SBDigg: $MTSocialBookmarks::MTSocialBookmarks::Plugin::tag_sb_digg
+        SBReddit: $MTSocialBookmarks::MTSocialBookmarks::Plugin::tag_sb_reddit
